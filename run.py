@@ -17,9 +17,9 @@ def is_on():
     s = socket.socket()
     s.settimeout(5)
     result = s.connect_ex(ROKU_CONNECTION)
-    return result == 0
     s.shutdown(socket.SHUT_RDWR)
     s.close()
+    return result == 0
 
 def send_power_command():
     devices = broadlink.discover(timeout=5,discover_ip_address=BROADLINK_IP)
