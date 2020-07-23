@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tv-auto-off:
+    build: .
+    restart: always
+    environment:
+      - ROKU_IP
+      - BROADLINK_IP
+      - POWER_IR_SIGNAL
+      - ROKU_PORT
+      - MAX_MINUTES
