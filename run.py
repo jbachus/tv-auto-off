@@ -17,7 +17,10 @@ def is_on():
     s = socket.socket()
     s.settimeout(5)
     result = s.connect_ex(ROKU_CONNECTION)
-    s.shutdown(socket.SHUT_RDWR)
+    try:
+      s.shutdown(socket.SHUT_RDWR)
+    except:
+      pass
     s.close()
     return result == 0
 
