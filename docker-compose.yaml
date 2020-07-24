@@ -9,3 +9,4 @@ services:
       - POWER_IR_SIGNAL
       - ROKU_PORT
       - MAX_MINUTES
+      - TZ

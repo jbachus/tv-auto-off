@@ -12,6 +12,7 @@ POWER_IR_SIGNAL (in Hex string format)
 Optionally you can also provide:  
 ROKU_PORT (defaults to 8060)  
 MAX_MINUTES (defaults to 60)  
+TZ (Timezone, defaults to UTC e.g. "America/Denver")
 
 ## Usage
 1. Create a .env file with the required environment variables.  For example:
